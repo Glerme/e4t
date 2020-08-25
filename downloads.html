@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4T</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="./css/downloads.css">
+    <script src="https://kit.fontawesome.com/b267272736.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <script>
+        (function () {
+            function scrollHorizontally(e) {
+                e = window.event || e;
+                var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+                document.getElementById('news').scrollLeft -= (delta * 40);
+                e.preventDefault();
+            }
+            if (document.getElementById('news').addEventListener) {
+
+                document.getElementById('news').addEventListener("mousewheel", scrollHorizontally, false);
+                // Firefox
+                document.getElementById('news').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+            } else {
+                // IE 6/7/8
+                document.getElementById('news').attachEvent("onmousewheel", scrollHorizontally);
+            }
+        })();
+    </script>
+
+
+</head>
+
+<body>
+    <div id="app" class="master">
+        <nav class="sidebar">
+            <div class="profile-container mt-5">
+                <img src="../pokes/logo.png" alt="profile">
+                <i class="fas fa-lg fa-angle-down"></i>
+            </div>
+            <div class="menu-box">
+                <a href="#/menu">
+                    <i class="fas fa-home">
+                        <span class="menu-tooltip">Menu</span>
+                    </i>
+                </a>
+                <a href="#/pesquisa">
+                    <i class="fas fa-search">
+                        <span class="menu-tooltip">Pesquisa</span>
+                    </i>
+                </a>
+                <a href="#/downloads">
+                    <i class="fas fa-download">
+                        <span class="menu-tooltip">Downloads</span>
+                    </i>
+                </a>
+                <a href="login.html">
+                    <i class="fas fa-sign-in-alt">
+                        <span class="menu-tooltip">Login</span>
+                    </i>
+                </a>
+            </div>
+        </nav>
+
+        <div id="main-div" class="mainpage">
+
+            <main>
+                <div class="row" id="direcao">
+                    <div class="col-12 col-sm-12 col-md-6 d-flex">
+                        <div class="container align-self-center">
+                            <div>
+                                <h3 class="mb-3"> Pokémon X e Y </h3>
+                                <p>Pokémon X e Y são jogos de interpretação de papéis produzidos pela
+                                    Game Freak e publicados pela Nintendo para o Nintendo 3DS, sendo os
+                                    jogos mais vendidos do console, com 27 milhões de cópias vendidas.
+                                </p>
+
+                                <div class="d-flex mt-3 justify-content-center">
+                                    <a href="#" class="btn ">Download</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <img src="/imagens/nessa.jpg" alt="lider de ginasio Nessa" class="float-left img-fluid">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn" id="nxt"><i class="fas fa-arrow-down"></i> Próximo</a>
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

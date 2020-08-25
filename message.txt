@@ -1,0 +1,169 @@
+body, html {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-container img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profile-container i {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.master {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #29264a;
+}
+
+.sidebar {
+    max-width: 12%;
+    flex: 0 0 12%;
+    background-color: #4f518c;
+}
+
+@media screen and (min-width: 425px) {
+    .sidebar {
+        max-width: 10%;
+        flex: 0 0 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar {
+        max-width: 8%;
+        flex: 0 0 8%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        max-width: 5%;
+        flex: 0 0 5%;
+    }
+
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.menu-box a {
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-box a i {
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.menu-box a i span {
+    position: fixed;
+    color: white;
+    background-color: #7785ac;
+    padding: 5px;
+    font-size: 20px;
+    left: 50px;
+    opacity: 0;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.menu-box a:hover i span {
+    transition: left .4s ease, opacity .3s;
+    left: 64px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#main-div {
+    height: 100%;
+    width: 100%;
+}
+
+#main-div main {
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#main-div main header span {
+    font-size: 14px;
+}
+
+.news-container {
+    display: inline-flex;
+    flex-flow: column wrap;
+    padding: 3px;
+    height: calc(100% - 4rem);
+    width: 100%;
+    overflow-X: auto;
+    overflow-Y: hidden;
+}
+
+.news-container img {
+    height: 70%;
+    width: 100%;
+    display: absolute;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(79, 81, 140, 1) 100%);
+    border-radius: 10px;
+}
+
+.news-container a {
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    color: white;
+    background-color: #4f518c;
+    border-radius: 10px;
+}
+
+.news-container a:hover {
+    text-decoration: none;
+}
+
+.news-container a span {
+    color: white;
+    margin-left: 5px;
+}
+
+.news-container a h5 {
+    color: white;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}

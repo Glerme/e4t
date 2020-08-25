@@ -1,0 +1,104 @@
+body{
+    z-index: 0;
+    background-color: #29264A;
+    color: white;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* menu */
+.menu{
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #694F8C;
+    box-shadow: 10px 14px #7700FF;
+    z-index: 1;
+}
+
+/* icone dentro do menu */
+.icone{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* texto elite dos quatro */
+.conteudo1{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.texto{
+    padding: 3rem;
+    align-self: center;
+}
+
+/* fundo imagem */
+.fundo{
+    opacity: .5;
+}
+
+/* botao saiba mais */
+.saiba{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.saiba a{
+    background-color: #ffff;
+    border-radius: 2rem;
+    width: 50%;
+    box-shadow: 10px 10px #7700FF;
+    color: #7700FF;
+}
+
+.saiba a:hover{
+    background-color: #c4c4c4;
+    color: white;
+}
+
+
+/* segunda div com conteudo */
+.conteudo2{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    /* padding: 10rem; */
+
+}
+
+
+
+/*############### Estilização dos cards ##################   */
+
+/* o container inteiro do card */
+.imgs div div{
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card{
+    box-shadow:  10px 14px #7700FF;
+}
+
+/* o texto dentro do card */
+.imgs div div p{
+    color: #7700FF;
+}
+
+/* imagem do card */
+.imgs div div img{
+    border-radius: 2rem;
+}
+
+
+

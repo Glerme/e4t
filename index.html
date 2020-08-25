@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4T</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <script src="https://kit.fontawesome.com/b267272736.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <script>
+        (function () {
+            function scrollHorizontally(e) {
+                e = window.event || e;
+                var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+                document.getElementById('news').scrollLeft -= (delta * 40);
+                e.preventDefault();
+            }
+            if (document.getElementById('news').addEventListener) {
+
+                document.getElementById('news').addEventListener("mousewheel", scrollHorizontally, false);
+                // Firefox
+                document.getElementById('news').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+            } else {
+                // IE 6/7/8
+                document.getElementById('news').attachEvent("onmousewheel", scrollHorizontally);
+            }
+        })();
+
+    </script>
+
+
+</head>
+
+<body>
+    <div id="app" class="master">
+        <nav class="sidebar">
+            <div class="profile-container mt-5">
+                <img src="../pokes/logo.png" alt="profile">
+                <i class="fas fa-lg fa-angle-down"></i>
+            </div>
+            <div class="menu-box">
+                <a href="#/menu">
+                    <i class="fas fa-home">
+                        <span class="menu-tooltip">Menu</span>
+                    </i>
+                </a>
+                <a href="#/pesquisa">
+                    <i class="fas fa-search">
+                        <span class="menu-tooltip">Pesquisa</span>
+                    </i>
+                </a>
+                <a href="#/downloads">
+                    <i class="fas fa-download">
+                        <span class="menu-tooltip">Downloads</span>
+                    </i>
+                </a>
+                <a href="login.html">
+                    <i class="fas fa-sign-in-alt">
+                        <span class="menu-tooltip">Login</span>
+                    </i>
+                </a>
+            </div>
+        </nav>
+        <div id="main-div" class="mainpage">
+            <main>
+                <header>
+                    <h3 class="p-0 m-0 mt-4">Noticias</h3>
+                    <span>Saíba tudo o que acontece no universo Pokemon</span>
+                </header>
+
+
+
+                <!-- //é aqui q vc faz as coisas dentro do view -->
+            </main>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

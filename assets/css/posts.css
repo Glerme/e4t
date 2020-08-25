@@ -1,0 +1,88 @@
+.header {
+    display: inline-flex;
+    z-index: 5;
+}
+
+.author {
+    margin: auto;
+    width: 100px;
+}
+
+
+.post-profile-container img {
+    object-fit: cover;
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.post-author {
+    display: block;
+    width: 100px;
+    margin-top: -10px;
+}
+
+.allowed-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+}
+
+.container {
+    z-index: 2;
+}
+
+.block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.block div img {
+    object-fit: cover;
+    width: 100%;
+    margin: 15px;
+    border-radius: 35px;
+}
+
+.simplelist {
+    list-style-type: none;
+}
+
+.taglist {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.taglist li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.taglist li:before {
+    content: "-";
+    padding-right: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
