@@ -19,6 +19,14 @@ body{
     z-index: 1;
 }
 
+.menu ul li a i{
+    color: white;
+}
+
+.menu ul li a i:hover{
+    color: black;
+}
+
 /* icone dentro do menu */
 .icone{
     width: 3rem;
@@ -75,7 +83,6 @@ body{
     /* padding: 10rem; */
 
 }
-
 
 
 /*############### Estilização dos cards ##################   */
